@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #FFFFFF;
+  width: 102rem;
+  height: 56.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+}
+.container .image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.container .image .image-principal {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.container .image .image-principal img:nth-child(1) {
+  position: absolute;
+  right: 8rem;
+  bottom: -12.5rem;
+}
+.container .image .image-principal img:nth-child(2) {
+  position: absolute;
+  width: 52rem;
+  right: 8rem;
+  top: 8rem;
+}
+.container .image .image-box {
+  height: 100%;
+}
+.container .image .image-box img {
+  position: absolute;
+  left: -10.2rem;
+  bottom: 13.5rem;
+  width: 21rem;
+}
+.container .accordion {
+  width: 50%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
