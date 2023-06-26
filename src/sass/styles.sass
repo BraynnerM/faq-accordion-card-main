@@ -20,6 +20,7 @@ body
     align-items: center
 
 .container
+    font-family: 'Kumbh Sans'
     background-color: #FFFFFF
     width: 102rem
     height: 56.5rem
@@ -59,3 +60,40 @@ body
     .accordion
         width: 50%
         height: 100%
+        padding: 5rem
+        padding-left: 1.5rem
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+
+        h1
+            font:
+                size: 3.5rem
+                weight: bold
+            text-transform: uppercase
+
+        .accordion-item            
+            border-bottom: 1px solid $dividers-color
+
+            .accordion-header
+                display: flex
+                justify-content: space-between
+                cursor: pointer
+                font-weight: 400
+
+                h3
+                    font-size: 1.6rem
+                    font-weight: 400                    
+                img
+                    width: auto
+                    height: 0.8rem
+
+                &.active
+                    h3
+                        font-weight: bold               
+                    
+  
+            .accordion-content
+                display: none
+                p
+                    font-size: 1.3rem

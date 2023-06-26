@@ -20,6 +20,7 @@ body {
 }
 
 .container {
+  font-family: "Kumbh Sans";
   background-color: #FFFFFF;
   width: 102rem;
   height: 56.5rem;
@@ -59,6 +60,42 @@ body {
 .container .accordion {
   width: 50%;
   height: 100%;
+  padding: 5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .accordion h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container .accordion .accordion-item {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.container .accordion .accordion-item .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 400;
+}
+.container .accordion .accordion-item .accordion-header h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.container .accordion .accordion-item .accordion-header img {
+  width: auto;
+  height: 0.8rem;
+}
+.container .accordion .accordion-item .accordion-header.active h3 {
+  font-weight: bold;
+}
+.container .accordion .accordion-item .accordion-content {
+  display: none;
+}
+.container .accordion .accordion-item .accordion-content p {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
