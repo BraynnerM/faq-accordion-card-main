@@ -10,7 +10,7 @@ html
     font-size: 10px
 
 body
-    background: $gradient
+    background: $gradient    
     max-width: 1440px
     height: 100vh
     margin: 0 auto
@@ -18,6 +18,7 @@ body
     flex-direction: column
     justify-content: center
     align-items: center
+    overflow: hidden
 
 .container
     font-family: 'Kumbh Sans'
@@ -59,34 +60,38 @@ body
 
     .accordion
         width: 50%
-        height: 100%
-        padding: 5rem
-        padding-left: 1.5rem
+        height: 100%  
+        margin-top: 4rem      
+        padding-left: 1.6rem
+        padding-right: 12.2rem        
         display: flex
         flex-direction: column
-        justify-content: space-around
+        justify-content: space-evenly
 
         h1
             font:
-                size: 3.5rem
+                size: 3.6rem
                 weight: bold
             text-transform: uppercase
 
         .accordion-item            
             border-bottom: 1px solid $dividers-color
+            width: 38.8rem
 
             .accordion-header
                 display: flex
                 justify-content: space-between
                 cursor: pointer
                 font-weight: 400
+                width:37.2rem
 
                 h3
-                    font-size: 1.6rem
-                    font-weight: 400                    
+                    font-size: 1.57rem
+                    font-weight: 400  
+                    margin-bottom: 2rem                  
                 img
                     width: auto
-                    height: 0.8rem
+                    height: 0.8rem                    
 
                 &.active
                     h3
@@ -97,3 +102,4 @@ body
                 display: none
                 p
                     font-size: 1.3rem
+                    margin-bottom: 2rem
