@@ -27,6 +27,7 @@ body
     height: 56.5rem
     border-radius: 2.5rem
     display: flex
+    align-items: center
 
     .image
         width: 50%
@@ -60,23 +61,26 @@ body
 
     .accordion
         width: 50%
-        height: 100%  
-        margin-top: 4rem      
+        height: 62%        
         padding-left: 1.6rem
         padding-right: 12.2rem        
         display: flex
         flex-direction: column
         justify-content: space-evenly
+        margin-top: 6.7rem
 
         h1
             font:
                 size: 3.6rem
-                weight: bold
+                weight: bold                              
             text-transform: uppercase
+            position: absolute
+            top: 27rem
 
         .accordion-item            
             border-bottom: 1px solid $dividers-color
             width: 38.8rem
+            height: auto
 
             .accordion-header
                 display: flex
@@ -91,7 +95,8 @@ body
                     margin-bottom: 2rem                  
                 img
                     width: auto
-                    height: 0.8rem                    
+                    height: 0.8rem 
+                    margin-top:.6rem                   
 
                 &.active
                     h3
@@ -101,5 +106,7 @@ body
             .accordion-content
                 display: none
                 p
-                    font-size: 1.3rem
-                    margin-bottom: 2rem
+                    font-size: 1.35rem
+                    margin-bottom: 2rem 
+                    line-height: 2rem
+                      
