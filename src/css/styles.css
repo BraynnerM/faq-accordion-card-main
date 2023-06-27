@@ -93,6 +93,9 @@ body {
   font-weight: 400;
   margin-bottom: 2rem;
 }
+.container .accordion .accordion-item .accordion-header h3:hover {
+  color: hsl(14, 88%, 65%);
+}
 .container .accordion .accordion-item .accordion-header img {
   width: auto;
   height: 0.8rem;
