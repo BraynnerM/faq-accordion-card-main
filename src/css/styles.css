@@ -61,20 +61,21 @@ body {
 }
 .container .accordion {
   width: 50%;
-  height: 62%;
+  height: 100%;
   padding-left: 1.6rem;
   padding-right: 12.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 6.7rem;
+  justify-content: space-between;
+  padding-top: 7rem;
+  padding-bottom: 9rem;
 }
 .container .accordion h1 {
   font-size: 3.6rem;
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
   top: 27rem;
+  height: 7.2rem;
 }
 .container .accordion .accordion-item {
   border-bottom: 1px solid hsl(240, 5%, 91%);
@@ -111,6 +112,22 @@ body {
   font-size: 1.35rem;
   margin-bottom: 2rem;
   line-height: 2rem;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    flex-direction: column;
+    width: 33rem;
+    height: 53.5rem;
+  }
+  .container .image {
+    width: 100%;
+    height: 50%;
+  }
+  .container .accordion {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
