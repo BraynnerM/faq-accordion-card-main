@@ -28,31 +28,25 @@ accordionHeaders.forEach(header => {
   });
 });
 
-/*
-<img id="myImage" src="imagem-original.jpg" alt="Imagem Original">
 
-<script>
-  // Seleciona a imagem pelo ID
-  const image = document.getElementById('myImage');
+const pattern = document.getElementById('pattern');
+const woman = document.getElementById('woman');
 
-  // Verifica a largura da página
-  function checkScreenWidth() {
-    const screenWidth = window.innerWidth || document.documentElement.clientWidth;
+function checkScreenWidth() {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-    // Verifica se a largura é inferior a 1120 pixels
-    if (screenWidth < 1120) {
-      // Altera o atributo src da imagem
-      image.src = 'nova-imagem.jpg';
-      image.alt = 'Nova Imagem';
-    } else {
-      // Define o atributo src da imagem de volta para a imagem original
-      image.src = 'imagem-original.jpg';
-      image.alt = 'Imagem Original';
-    }
+  if (screenWidth <1120) {
+    pattern.src = "./src/assets/bg-pattern-mobile.svg";
+    pattern.alt = "pattern-mobile";
+    woman.src = "./src/assets/illustration-woman-online-mobile.svg";
+    woman.alt = "woman-mobile"
+  } else {
+    pattern.src = "./src/assets/bg-pattern-desktop.svg";
+    pattern.alt = "pattern-desktop"
+    woman.src = "./src/assets/illustration-woman-online-desktop.svg";
+    woman.alt = "woman-desktop"
   }
+}
 
-  // Executa a função quando a página é carregada e redimensionada
-  window.addEventListener('load', checkScreenWidth);
-  window.addEventListener('resize', checkScreenWidth);
-</script>
-*/
+window.addEventListener('load', checkScreenWidth);
+window.addEventListener('resize', checkScreenWidth);

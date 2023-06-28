@@ -110,7 +110,7 @@ body {
 }
 .container .accordion .accordion-item .accordion-content p {
   font-size: 1.35rem;
-  margin-bottom: 2rem;
+  margin-bottom: rem;
   line-height: 2rem;
 }
 
@@ -121,12 +121,57 @@ body {
     height: 53.5rem;
   }
   .container .image {
+    flex: 0 0 21%;
     width: 100%;
     height: 50%;
   }
+  .container .image .image-principal {
+    overflow: visible;
+  }
+  .container .image #pattern {
+    width: 73%;
+    right: 4.3rem;
+    bottom: 0.8rem;
+  }
+  .container .image #woman {
+    width: 73%;
+    right: 4.3rem;
+    top: -11.1rem;
+  }
+  .container .image .image-box {
+    display: none;
+  }
   .container .accordion {
+    flex: 1;
     width: 100%;
-    height: 50%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5.5rem;
+  }
+  .container .accordion h1 {
+    font-size: 3.2rem;
+    height: 5.5rem;
+    text-align: center;
+  }
+  .container .accordion .accordion-item {
+    width: 28rem;
+  }
+  .container .accordion .accordion-item .accordion-header {
+    width: 28rem;
+  }
+  .container .accordion .accordion-item .accordion-header h3 {
+    font-size: 1.32rem;
+    margin-bottom: 1rem;
+  }
+  .container .accordion .accordion-item .accordion-content {
+    display: none;
+  }
+  .container .accordion .accordion-item .accordion-content p {
+    font-size: 1.21rem;
+    width: 26rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
   }
 }
 
