@@ -128,12 +128,12 @@ body {
   .container .image .image-principal {
     overflow: visible;
   }
-  .container .image #pattern {
+  .container .image .image-principal #pattern {
     width: 73%;
     right: 4.3rem;
     bottom: 0.8rem;
   }
-  .container .image #woman {
+  .container .image .image-principal #woman {
     width: 73%;
     right: 4.3rem;
     top: -11.1rem;
